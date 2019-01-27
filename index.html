@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="title-div">
+            <h1>Do You Know Your Barbecue?</h1>
+        </div>
+
+        <div id="game-start-div">
+            <button id="start">Start</button>
+        </div>
+
+        <div id="timer-div">
+            <h2>Time Remaining: <span id="timer"></span></h2>
+        </div>
+
+        <div id="game-container">
+
+            <h3>Question 1: Which is not a common barbecue cooking method?</h3>
+            <div class="form-check form-check-inline">
+                <input id="Frying" class="form-check-input" type="radio" name="Question1" id="inlineRadio1-1" value="option1">
+                <label for="Frying" class="form-check-label" for="inlineRadio1">Frying</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Grilling" class="form-check-input" type="radio" name="Question1" id="inlineRadio1-2" value="option2">
+                <label for="Grilling" class="form-check-label" for="inlineRadio2">Grilling</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Roasting" class="form-check-input" type="radio" name="Question1" id="inlineRadio1-3" value="option3">
+                <label for="Roasting" class="form-check-label" for="inlineRadio3">Roasting</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Smoking" class="form-check-input" type="radio" name="Question1" id="inlineRadio1-4" value="option4">
+                <label for="Smoking" class="form-check-label" for="inlineRadio4">Smoking</label>
+            </div>
+
+
+            <h3>Question 2: True or False: Barbecuing and grilling are the same thing.</h3>
+            <div class="form-check form-check-inline">
+                <input id="True2" class="form-check-input" type="radio" name="Question2" id="inlineRadio2-1" value="option1">
+                <label for="True2" class="form-check-label" for="inlineRadio1">True</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="False2" class="form-check-input" type="radio" name="Question2" id="inlineRadio2-2" value="option2">
+                <label for="False2" class="form-check-label" for="inlineRadio2">False</label>
+            </div>
+
+            <h3>Question 3: Which is not a variety of barbecue sauce?</h3>
+            <div class="form-check form-check-inline">
+                <input id="Ketchup-based" class="form-check-input" type="radio" name="Question3" id="inlineRadio3-1" value="option1">
+                <label for="Ketchup-based" class="form-check-label" for="inlineRadio1">Ketchup-based</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Mustard-based"class="form-check-input" type="radio" name="Question3" id="inlineRadio3-2" value="option2">
+                <label for="Mustard-based" class="form-check-label" for="inlineRadio2">Mustard-based</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Spice-based" class="form-check-input" type="radio" name="Question3" id="inlineRadio3-3" value="option3">
+                <label for="Spice-based" class="form-check-label" for="inlineRadio3">Spice-based</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Vinegar-based" class="form-check-input" type="radio" name="Question3" id="inlineRadio3-4" value="option4">
+                <label for="Vinegar-based" class="form-check-label" for="inlineRadio4">Vinegar-based</label>
+            </div>
+
+            <h3>Question 4: True or False: Alabama is known for a type of barbecue sauce based on mayonnaise and
+                vinegar.</h3>
+            <div class="form-check form-check-inline">
+                <input id="True4" class="form-check-input" type="radio" name="Question4" id="inlineRadio4-1" value="option1">
+                <label for="True4" class="form-check-label" for="inlineRadio1">True</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="False4" class="form-check-input" type="radio" name="Question4" id="inlineRadio4-2" value="option2">
+                <label for="False4" class="form-check-label" for="inlineRadio2">False</label>
+            </div>
+
+            <h3>Question 5: American barbecue has its roots in the culture of:</h3>
+            <div class="form-check form-check-inline">
+                <input id="Cuba" class="form-check-input" type="radio" name="Question5" id="inlineRadio5-1" value="option1">
+                <label for="Cuba" class="form-check-label" for="inlineRadio1">Cuba</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="The-Caribbean" class="form-check-input" type="radio" name="Question5" id="inlineRadio5-2" value="option2">
+                <label for="The-Caribbean" class="form-check-label" for="inlineRadio2">The Caribbean</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Spain" class="form-check-input" type="radio" name="Question5" id="inlineRadio5-3" value="option3">
+                <label for="Spain" class="form-check-label" for="inlineRadio3">Spain</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Portugal" class="form-check-input" type="radio" name="Question5" id="inlineRadio5-4" value="option4">
+                <label for="Portugal" class="form-check-label" for="inlineRadio4">Portugal</label>
+            </div>
+
+            <h3>Question 6: True or False: Mutton is the preferred meat for barbecue in western Kentucky.</h3>
+            <div class="form-check form-check-inline">
+                <input id="True6" class="form-check-input" type="radio" name="Question6" id="inlineRadio6-1" value="option1">
+                <label for="True6" class="form-check-label" for="inlineRadio1">True</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="False6" class="form-check-input" type="radio" name="Question6" id="inlineRadio6-2" value="option2">
+                <label for="False6" class="form-check-label" for="inlineRadio2">False</label>
+            </div>
+
+            <h3>Question 7: A cut of meat typically used in barbecue is:</h3>
+            <div class="form-check form-check-inline">
+                <input id="Sirloin" class="form-check-input" type="radio" name="Question7" id="inlineRadio7-1" value="option1">
+                <label for="Sirloin" class="form-check-label" for="inlineRadio1">Sirloin</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Prime-Rib"class="form-check-input" type="radio" name="Question7" id="inlineRadio7-2" value="option2">
+                <label for="Prime-Rib"class="form-check-label" for="inlineRadio2">Prime Rib</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Boston-Butt" class="form-check-input" type="radio" name="Question7" id="inlineRadio7-3" value="option3">
+                <label for="Boston-Butt" class="form-check-label" for="inlineRadio3">Boston Butt</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Tenderloin" class="form-check-input" type="radio" name="Question7" id="inlineRadio7-4" value="option4">
+                <label for="Tenderloin" class="form-check-label" for="inlineRadio4">Tenderloin</label>
+            </div>
+
+            <h3>Question 8: True or False: Abraham Lincoln’s wedding feast was a barbecue.</h3>
+            <div class="form-check form-check-inline">
+                <input id="True8" class="form-check-input" type="radio" name="Question8" id="inlineRadio8-1" value="option1">
+                <label for="True8" class="form-check-label" for="inlineRadio1">True</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="False8" class="form-check-input" type="radio" name="Question8" id="inlineRadio8-2" value="option2">
+                <label for="False8" class="form-check-label" for="inlineRadio2">False</label>
+            </div>
+
+            <h3>Question 9: One way to improve the tastiness of barbecue is to include a:</h3>
+            <div class="form-check form-check-inline">
+                <input id="Wet-Rub" class="form-check-input" type="radio" name="Question9" id="inlineRadio9-1" value="option1">
+                <label for="Wet-Rub" class="form-check-label" for="inlineRadio1">Wet Rub</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Massage-Rub" class="form-check-input" type="radio" name="Question9" id="inlineRadio9-2" value="option2">
+                <label for="Massage-Rub" class="form-check-label" for="inlineRadio2">Massage Rub</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Overnight-Rub" class="form-check-input" type="radio" name="Question9" id="inlineRadio9-3" value="option3">
+                <label for="Overnight-Rub" class="form-check-label" for="inlineRadio3">Overnight Rub</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="Dry-Rub" class="form-check-input" type="radio" name="Question9" id="inlineRadio9-4" value="option4">
+                <label for="Dry-Rub" class="form-check-label" for="inlineRadio4">Dry Rub</label>
+            </div>
+
+            <h3>Question 10: True or False: Wendy’s was originally a barbecue drive-in.</h3>
+            <div class="form-check form-check-inline">
+                <input id="True10" class="form-check-input" type="radio" name="Question10" id="inlineRadio10-1" value="option1">
+                <label for="True10" class="form-check-label" for="inlineRadio1">True</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input id="False10" class="form-check-input" type="radio" name="Question10" id="inlineRadio10-2" value="option2">
+                <label for="False10" class="form-check-label" for="inlineRadio2">False</label>
+            </div>
+            <button id="finishGame">Finish Game</button>
+        </div>
+
+        <div id="game-end-div">
+            <h2>Game Over!</h2>
+            <h3>Correct Answers: <span id="correctAnswers"></span></h3>
+            <h3>Incorrect Answers: <span id="incorrectAnswers"></span></h3>
+            <h3>Unanswered Questions: <span id="emptyAnswers"></span></h3>
+            <button id="restartGame">Restart Game</button>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

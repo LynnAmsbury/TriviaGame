@@ -1,0 +1,56 @@
+body {
+    background-image: url("../images/BBQ.jpeg");
+    height: 100%;
+}
+
+#wrapper {
+    background-color: hsl(46, 93%, 50%);
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    border-bottom: 5px solid darkred;
+    border-left: 5px solid darkred;
+    border-right: 5px solid darkred;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5% 0;
+  
+}
+
+button{
+    background: rgb(255, 94, 0);
+    display: block;
+    width: 400px;
+    height: 100px;
+    margin: 10px auto 0;
+    font-size: 42px;
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: darkred;
+    border: 2px solid black;
+}
+
+#game-container {
+    display: none;
+}
+
+#game-end-div {
+    display: none;
+}
+
+h1 {
+    font-size: 4em;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding: 20px;
+}
