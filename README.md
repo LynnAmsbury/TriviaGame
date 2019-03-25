@@ -6,7 +6,7 @@ Visit the project at https://lynnamsbury.github.io/TriviaGame/
 
 ![start page](assets/images/start_page.png)
 
-## Specs:
+## Specs
 
 The quiz form has both multiple choice and true/false options, and the player may not pick more than one answer per question.
 
