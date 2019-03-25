@@ -1,21 +1,21 @@
 # TriviaGame
 
-Barbecue is an iconic food in cultures all over the world, including America. Test your knowledge of American barbecue in this trivia game made using HTML, CSS, JavaScript, and jQuery.
+Barbecue is an iconic food in cultures all over the world, including America. Test your knowledge of American barbecue in this timed trivia game made using HTML, CSS, JavaScript, and jQuery.
 
 Visit the project at https://lynnamsbury.github.io/TriviaGame/
 
-Overview:
+![start page](assets/images/start_page.png)
 
-In this assignment, create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
+## Specs:
 
-Specs:
+The quiz form has multiple choice and true/false options, and the player may not pick more than one answer per question.
 
-Create a trivia form with multiple choice or true/false options (your choice).
+![quiz page](assets/images/quiz_page_blank.png)
 
-The player will have a limited amount of time to finish the quiz. 
+The player has a limited amount of time to finish the quiz.
 
-The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+![start page](assets/images/quiz_page_filled_out.png)
 
-Don't let the player pick more than one answer per question.
+The game ends when the time runs out. The end page reveals the number of questions that the player answer correctly and incorrectly.
 
-Don't forget to include a countdown timer.
+![start page](assets/images/end_page.png)
